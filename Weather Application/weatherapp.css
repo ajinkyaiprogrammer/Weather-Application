@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  min-height: 100vh;
+  color: #0f172a;
+  background: linear-gradient(180deg, #e0f2fe 0%, #bae6fd 100%);
+  padding-bottom: 50px;
+}
+
+/* header section */
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  padding: 1rem 1.5rem;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(50px);
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #075985;
+  letter-spacing: 1rem;
+  text-shadow:
+    2px 2px 0 rgba(14, 165, 233, 0.2),
+    -2px -2px 0 rgba(14, 165, 233, 0.2),
+    2px -2px 0 rgba(14, 165, 233, 0.2),
+    -2px 2px 0 rgba(14, 165, 233, 0.2);
+  /* justify-self: end; */
+}
+
+/* #hamburger-icon{
+    justify-self: flex-start;
+} */
+
+.input-btn {
+  cursor: pointer;
+  font-size: 1.25rem;
+  color: #075985;
+  padding: 0.4rem 0.6rem;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 1rem;
+  width: 500px;
+  max-width: 50%;
+  justify-self: center;
+}
+
+.input-btn:hover {
+  opacity: 0.7;
+}
+
+#input-box {
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+}
+
+#search-input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #075985;
+  font-family: "Manrope", sans-serif;
+  font-size: 0.9rem;
+  width: 500px;
+  padding: 0.4rem 0.3rem;
+}
+
+#search-input::placeholder {
+  color: #075985;
+  opacity: 0.6;
+}
+
+#input-box:focus-within {
+  border-color: #075985;
+  box-shadow: 0 0 0 2px rgba(14, 165, 233, 0.2);
+}
+
+/* main content css*/
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  margin-bottom: 20px;
+}
+
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.location {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #131b2e;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.1rem;
+}
+
+.date {
+  color: #075985;
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+}
+
+.temp-display {
+  font-size: 12rem;
+  font-weight: 400;
+  color: #006591;
+  line-height: 1;
+}
+
+.condition-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.condition-icon {
+  color: #075985;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+  background: #ffffff66;
+  border: 1px solid rgba(14, 165, 233, 0.2);
+  border-radius: 20px;
+  padding: 1.5rem;
+  backdrop-filter: blur(12px);
+  transition: 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.card-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #006591;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon-sm {
+  font-size: 0.8rem;
+  color: #0ea5e9;
+}
+
+.card-value,
+.card-main-value {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.unit {
+  font-size: 1rem;
+  color: #64748b;
+  margin-left: 0.5rem;
+}
+
+.card-subtext {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin-top: 0.5rem;
+}
+
+.sun-times {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.sun-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.sun-label {
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+.sun-value {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* footer css */
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  z-index: 1000;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  color: #64748b;
+  transition: 0.2s;
+  flex: 1;
+}
+
+.nav-icon {
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.nav-text {
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.nav-item.active {
+  color: #075985;
+}
+
+.nav-item:hover {
+  color: #075985;
+}
+
+@media (max-width: 500) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .hero {
+    padding: 5rem 1rem;
+  }
+}
