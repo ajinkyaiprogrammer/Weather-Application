@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://googleapis.com" />
+    <link rel="stylesheet" href="weatherapp.css" />
+  </head>
+  <body>
+    <!-- header section -->
+    <div id="header" class="header">
+      <!-- <div class="input-btn" id="hamburger-icon">
+        <i class="fa-solid fa-bars"></i>
+      </div> -->
+      <div class="logo">SkyGlass Weather</div>
+    </div>
+
+    <!-- main content -->
+
+    <div class="content-wrapper">
+      <!-- hero section -->
+
+      <div id="hero-section" class="hero">
+        <div id="current-location" class="location">San Francisco, CA</div>
+
+        <div id="current-date" class="date">Monday, 24 July • 14:30</div>
+
+        <div id="current-temp-container" class="temp-display">
+          <span id="temp-value">24</span>°C
+        </div>
+
+        <div id="current-condition-wrapper" class="condition-container">
+          <i
+            id="condition-icon"
+            class="fa-solid fa-cloud-sun condition-icon"
+          ></i>
+          <span id="current-condition">Partly Cloudy</span>
+        </div>
+
+        <div id="input-box" class="input-btn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="search-input" placeholder="Search City..." />
+        </div>
+      </div>
+
+      <!-- information cards -->
+
+      <div id="metrics-grid" class="grid">
+        <div id="card-daily-range" class="card">
+          <div class="card-label">Daily Range</div>
+
+          <div class="card-main-value">
+            <span id="val-daily-high">28°</span> /
+            <span id="val-daily-low">19°</span>
+          </div>
+        </div>
+
+        <div id="card-wind" class="card">
+          <div class="card-label">
+            <i class="fa-solid fa-wind icon-sm"></i> Wind
+          </div>
+
+          <div id="val-wind-speed" class="card-value">
+            12 <span class="unit">km/h</span>
+          </div>
+
+          <div id="val-wind-dir" class="card-subtext">North-West • 310°</div>
+        </div>
+
+        <div id="card-humidity" class="card">
+          <div class="card-label">
+            <i class="fa-solid fa-droplet icon-sm"></i> Humidity
+          </div>
+
+          <div id="val-humidity" class="card-value">
+            64 <span class="unit">%</span>
+          </div>
+
+          <div id="val-dew-point" class="card-subtext">Dew point is 16°</div>
+        </div>
+
+        <div id="card-sun-cycle" class="card card-wide">
+          <div class="card-label">
+            <i class="fa-solid fa-sun icon-sm"></i> Sun Cycle
+          </div>
+
+          <div class="sun-times">
+            <div class="sun-item">
+              <span class="sun-label">Sunrise</span>
+              <span id="val-sunrise" class="sun-value">06:12 AM</span>
+            </div>
+
+            <div class="sun-item">
+              <span class="sun-label">Sunset</span>
+              <span id="val-sunset" class="sun-value">20:45 PM</span>
+            </div>
+          </div>
+        </div>
+
+        <div id="card-visibility" class="card">
+          <div class="card-label">
+            <i class="fa-solid fa-eye icon-sm"></i> Visibility
+          </div>
+
+          <div id="val-visibility" class="card-value">
+            10 <span class="unit">km</span>
+          </div>
+
+          <div class="card-subtext">Clear view</div>
+        </div>
+
+        <div id="card-pressure" class="card">
+          <div class="card-label">
+            <i class="fa-solid fa-gauge-high icon-sm"></i> Pressure
+          </div>
+
+          <div id="val-pressure" class="card-value">
+            1012 <span class="unit">hPa</span>
+          </div>
+
+          <div class="card-subtext">Steady</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer section -->
+
+    <div id="footer-nav" class="footer">
+      <div id="nav-forecast" class="nav-item active">
+        <i class="fa-solid fa-cloud-sun nav-icon"></i>
+        <span class="nav-text">FORECAST</span>
+      </div>
+
+      <div id="nav-radar" class="nav-item">
+        <i class="fa-solid fa-tower-broadcast nav-icon"></i>
+        <span class="nav-text">RADAR</span>
+      </div>
+
+      <div id="nav-locations" class="nav-item">
+        <i class="fa-solid fa-location-dot nav-icon"></i>
+        <span class="nav-text">LOCATIONS</span>
+      </div>
+
+      <div id="nav-radar" class="nav-item">
+        <i class="fa-solid fa-gear nav-icon"></i>
+        <span class="nav-text">SETTINGS</span>
+      </div>
+    </div>
+
+    <script src="weatherapp.js"></script>
+  </body>
+</html>
