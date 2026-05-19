@@ -1,7 +1,5 @@
 # Weather Application
 
-# Weather Application
-
 A lightweight weather dashboard built with HTML, CSS, and JavaScript. This project fetches live weather data from the OpenWeatherMap API and displays current conditions, temperature, wind, humidity, visibility, pressure, and sunrise/sunset times.
 
 ## Features
