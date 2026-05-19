@@ -35,7 +35,7 @@ A lightweight weather dashboard built with HTML, CSS, and JavaScript. This proje
 The app currently uses an embedded OpenWeatherMap API key inside `weatherapp.js`:
 
 ```js
-const apiKey = "a3fbcfbf09e86243aded9dea29621948";
+const apiKey = "*************************************";
 ```
 
 For a production project, replace this with a secure method of managing API keys or use a backend proxy.
